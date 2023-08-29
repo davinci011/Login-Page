@@ -1,0 +1,162 @@
+/* Style for the body  */
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    background: #F8F8F8;
+    font-family: Poppins;
+    color: black;
+    font-weight: bold;
+}
+/* Flex-container */
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* Style for the heading */
+h1{
+    color: #030303;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.02px;
+    text-transform: uppercase;
+}
+/* Style for flex-item */
+.flex1{
+    max-width: 1200px;
+    margin: -35px auto 0px auto;
+    border: 2px solid  #EA454C;
+    padding: 30px 55px 30px 30px;
+    border-radius: 10px;
+    box-shadow:0px 4px 10px 0px rgba(233, 68, 75, 0.25) ;
+   
+}
+.word{
+    text-align: center;
+}
+/* Style for the input element  */
+input[type=email],input[type=password]{
+    display: block;
+    margin: 10px; 
+    line-height: 1.9;
+    padding: 5px 10px;
+    width: 100%;
+    border:1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    outline: none;
+}
+input[type=email]:focus{
+    border:2px solid  #EA454C;
+}
+input[type=password]:focus{
+    border:2px solid  #EA454C;
+}
+#check{
+    margin-left: 15px;
+}
+/* Style for the label */
+label{
+    margin: 10px;
+    font-weight:bold ;
+    font-size: 14px;
+    letter-spacing: 0.42px; 
+}
+/* Style for the Image */
+img{
+  max-width: 100%;
+  height: auto;
+}
+/* Style for flex-item */
+.pare2{
+    margin-left:50px;
+}
+/* Style for Flex-container */
+.parent-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Style for button */
+#btn{
+    display: block;
+    margin: 20px 10px 20px 10px  ;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background: #EA454C;
+    box-shadow: 0px 4px 10px 0px rgba(233, 68, 75, 0.25);
+    border: 1px solid #EA454C;
+    color: white;
+    font-size: 17px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#btn:hover{
+    transform: scale(1.1);
+}
+/* Style for button */
+#btn-grp{
+    display: block;
+    margin: 10px;
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background:rgba(234, 69, 76, 0.00);;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    color: black;
+    font-size: 17px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#btn-grp:hover{
+    transform: scale(1.1);
+}
+
+.foot{
+    margin-top: 60px 10px 20px 10px ;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:  #EA454C;
+}
+
+/* Design for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .container{
+        flex-wrap: wrap;
+        margin-top: 60px;
+        padding: 20px;
+    }
+    .flex{
+        display:none;
+    }
+    h1{
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 1.0px;
+    }
+    .parent-flex{
+        flex-wrap: wrap;
+    }
+    .pare2{
+        margin-left: 13px;
+    }
+    .pare1{
+        margin-top: 10px;
+    }
+    .foot{
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
